@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/all.css" media="all">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="logo hidden">
+                <img src="assets/logo.webp" alt="Logo" class="hidden">
+                <h3 class="hidden">Finnger</h3>
+            </div>
+            <h1 class="hidden">Holla, Welcome Back</h1>
+            <p class="hidden sub-title">Hey, welcome back to your special place</p>
+            <form action="" method="post" class="hidden">
+                <!-- e-mail -->
+                <input type="email" name="email" id="email" class="hidden" placeholder="E-MAIL" required>
+                <!-- senha -->
+                <input type="password" name="senha" id="senha" class="hidden" placeholder="SENHA" minlength="8"
+                    maxlength="50" required>
+                <div class="remembers hidden">
+                    <div class="rem hidden">
+                        <input type="checkbox" id="remember" class="hidden">
+                        <label for="remember" class="hidden">Remember me</label>
+                    </div>
+                    <a href="https://www.gmail.com" target="_blank" class="fogot hidden">Fogot password?</a>
+                </div>
+                <button type="submit" class="hidden">Sign in</button>
+            </form>
+            <p class="hidden si-up">Don't have an account? <a href="pages/sign_up.html" class="sign-up hidden"> Sign up</a></p>
+        </section>
+        <img src="assets/bg.avif" alt="Imagem mãos mexendo em um celular." class="img_hidden">
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

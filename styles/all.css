@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #ddd;
+
+    height: 100dvh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.14);
+    background-color: white;
+    border-radius: 20px;
+
+    padding: 15px;
+    width: 1600px;
+    min-height: 750px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main section {
+    padding: 50px;
+    padding-bottom: 0;
+    max-width: 550px;
+}
+
+main > img {
+    border-radius: 20px;
+    min-width: 800px;
+}
+
+main div.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+main div.logo h3 {
+    font-size: 1.2em;
+}
+
+main div.logo {
+    display: flex;
+    align-items: center;
+}
+
+main h1 {
+    margin-top: 80px;
+
+    font-size: 3em;
+}
+
+main p.sub-title {
+    margin: 30px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"], input[type="password"] {
+    border: 1px solid rgb(97, 97, 97);
+    border-radius: 10px;
+
+    padding: 10px;
+    min-height: 40px;
+    margin: 15px 0;
+
+    font-size: 1.05em;
+
+    transition: all .3s;
+    cursor: pointer;
+}
+
+input[type="email"]:hover, input[type="password"]:hover {
+    background-color: #eee;
+    transform: translateY(-5px);
+}
+
+label {
+    font-weight: 500;
+}
+
+input[type="checkbox"] {
+    max-height: 20px;
+    margin-right: 5px;
+
+    cursor: pointer;
+}
+
+main div.remembers {
+    margin: 5px 0 50px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+a.fogot {
+    color: black;
+    text-decoration: none;
+
+    transition: all .3s;
+}
+
+a.fogot:hover {
+    color: purple;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(144, 22, 200);
+
+    max-width: 160px;
+    min-height: 50px;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1em;
+
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    background-color: rgb(168, 66, 215);
+    transform: translateY(-4px);
+}
+
+a.sign-up {
+    text-decoration: none;
+}
+
+a.sign-up:hover {
+    color: rgb(144, 22, 200);
+    text-decoration: underline;
+}
+
+p.si-up {
+    margin-top: 50px;
+}
+
+.img_hidden {
+    opacity: 0;
+    transition: all .8s;
+    filter: blur(20px);
+    transform: translateX(100%) translateY(100%);
+}
+
+.hidden {
+    opacity: 0;
+    transition: all .8s;
+    filter: blur(20px);
+    transform: translateX(-100%) translateY(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) translateY(0);
+}
